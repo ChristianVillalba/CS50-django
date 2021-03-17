@@ -1,5 +1,6 @@
 # django-CS50
 CS50: DJANGO TUTORIAL\
+
 (Note: Create Virtual Environment if necessary)\
 Python version: 3.9.2 \
 Django version: 3.1
