@@ -10,5 +10,14 @@ def cristian(request):
 def cthulhu(request):
     return HttpResponse("Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn")
 
-def greet(request, name): #takes an additional arg: name
-    return HttpResponse(f"Hello,{name.capitalize()}") #we are using a python method
+# greet using HttpResponse
+"""
+def greet(request, name):
+#takes an additional arg: name
+    return HttpResponse(f"Hello,{name.capitalize()}")
+    #we are using a python method """
+# greet using render
+def greet(request, name):
+    return render(request, "hello/greet.html",{
+        "name": name.capitalize()
+    })

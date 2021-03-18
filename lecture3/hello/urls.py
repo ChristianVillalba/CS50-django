@@ -5,7 +5,6 @@ from . import views
 urlpatterns = [
     path("",views.index, name="index"),
     # "" empty string, no additional args
-    path("<str:name>", views.greet, name="greet"),
     path("cristian",views.cristian, name="cristian"),
     path("cthulhu",views.cthulhu, name="cthulhu"),
     #url pattern using placeholders
