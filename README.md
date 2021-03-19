@@ -1,12 +1,13 @@
 # django-CS50
 CS50: DJANGO TUTORIAL\
 
-(Note: Create Virtual Environment if necessary)\
+(Create Virtual Environment if necessary)\
 Python version: 3.9.2 \
 Django version: 3.1
 
 NOTES:\
-(taken during the course)
+taken during the lecture: Django - Lecture 3 - CS50's Web Programming with Python and JavaScript 2020\
+link (YouTube) : https://www.youtube.com/watch?v=w8q0C-C1js4&list=PLhQjrBD2T380xvFSUmToMMzERZ3qB5Ueu&index=5&ab_channel=CS50
 
 Commands:\
 -Creating our first project using commands:\
@@ -17,6 +18,7 @@ python manage.py startapp appName\
 python manage.py runserver
 
 First App:\
+[To be able to use any app: go to settings.py >scroll> INSTALLED_APPS > add nameApp to the list.]\
 -Produce a response (HttpResponse) when a url is visited.\
 -urls.py in project folder: master urls.py file connects with urls in apps\
 -urls.py in app folder: creating this file allows us to separate things out (modularity).\
@@ -34,6 +36,11 @@ template name: a reference to what are going to use.\
 Render best practice: prefix the file with the directory name to avoid conflicts:\
 eg: render(request, "myDirectory/myFile.html")
 
+templates & static files:\
+Best practice: How to manage the folders to  keep all the processes separated and manage modularity:\
+projectFolder/appName/templates/appName/index.html\
+projectFolder/appName/static/appName/style.css
+
 Templates:\
 -Templates are parameterizables\
 Django takes html files and treats them like templates that we can render\ 
@@ -44,8 +51,14 @@ In the html: {{key}} will display the VALUE\
 +eg: hello application\
 -{% %} Django template language, adds logic.\
 The content displayed will depend on the logic (eg: conditions).\
-Django takes the html files, manipulate them and returns only the final result.\
+Django takes the html template and manipulate it based on the input we get.\
+then, it returns to the user only the final result at the end of the rendering process.\
 Logic and possible content won't be displayed using devTools\
 +eg: newyear application 
+
+Static Files:\
+Files that aren't going to change (eg: CSS).
+
+
 
 
