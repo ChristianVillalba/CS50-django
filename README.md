@@ -1,5 +1,5 @@
 # django-CS50
-CS50: DJANGO TUTORIAL\
+CS50: DJANGO TUTORIAL
 
 (Create Virtual Environment if necessary)\
 Python version: 3.9.2 \
