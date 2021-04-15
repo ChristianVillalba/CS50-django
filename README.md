@@ -5,6 +5,10 @@ CS50: DJANGO TUTORIAL
 Python version: 3.9.2 \
 Django version: 3.1
 
+[in Terminal]\
+Check python version: python\
+Check django verion: python -m django --version
+
 NOTES:\
 taken during the lecture: Django - Lecture 3 - CS50's Web Programming with Python and JavaScript 2020\
 Link (YouTube) : https://www.youtube.com/watch?v=w8q0C-C1js4&list=PLhQjrBD2T380xvFSUmToMMzERZ3qB5Ueu&index=5&ab_channel=CS50 \
