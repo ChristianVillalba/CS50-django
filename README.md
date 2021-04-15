@@ -1,5 +1,5 @@
 # django-CS50
-CS50: DJANGO TUTORIAL
+#### CS50: DJANGO TUTORIAL
 
 (Create Virtual Environment if necessary)\
 Python version: 3.9.2 \
@@ -9,18 +9,31 @@ Django version: 3.1
 Check python version: python\
 Check django verion: python -m django --version
 
-NOTES:\
-taken during the lecture: Django - Lecture 3 - CS50's Web Programming with Python and JavaScript 2020\
+
+#### DJANGO PROJECT:\
+A Django Project ususally consisit in one or more Django Applications.\
+Each Application will offer a different service or functionality inside our bigger project.\
+I created this project to understand how Django works:\
+
+#### Project:
+-Lecture3
+
+#### Applications:
+
+##### -Hello
+It returns a response when we visit *localServer*/hello\
+Inside this app, I included the next options:\
+*localServer*/hello/ [It renders an html template: index.html]\
+*localServer*/hello/cristian [an http response]\
+*localServer*/hello/cthulhu  [an http response]\
+*localServer*/hello/*name*  [It renders an html template (greet.html) what uses placeholders]\
+
+## NOTES:\
+These notes were taken during the lecture: Django - Lecture 3 - CS50's Web Programming with Python and JavaScript 2020\
 Link (YouTube) : https://www.youtube.com/watch?v=w8q0C-C1js4&list=PLhQjrBD2T380xvFSUmToMMzERZ3qB5Ueu&index=5&ab_channel=CS50 \
 The next notes are just references of what I considered useful information related to this project.\
 Good written documentation is a key part of Django:\
 Link (Django Documentation): https://www.djangoproject.com/
-
-DJANGO PROJECT:\
-A Django Project ususally consisit in one or more Django Applications.\
-Each Application will offer a different service or functionality inside our bigger project.\
-[To be able to use any app: go to settings.py >scroll> INSTALLED_APPS > add nameApp to the list.]\
-I created this project to understand how Django works.\
 
 Commands:\
 -Creating our first project using commands:\
@@ -30,7 +43,9 @@ python manage.py startapp appName\
 -Running our computer as server:\
 python manage.py runserver
 
-First App:\
+[To be able to use any app: go to settings.py >scroll> INSTALLED_APPS > add nameApp to the list.]
+
+Hello App:\
 -Produce a response (HttpResponse) when a url is visited.\
 -urls.py in project folder: master urls.py file connects with urls in apps\
 -urls.py in app folder: creating this file allows us to separate things out (modularity).\
