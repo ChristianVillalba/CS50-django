@@ -16,20 +16,23 @@ Each Application will offer a different service or functionality inside our bigg
 I created this project to understand how Django works:\
 
 #### Project:
--Lecture3
+#### -Lecture3
 
 #### Applications:
-##### -hello App
+#### -hello App
 It returns a response when we visit *localServer*/hello  
 Inside this app, I included the next options:  
 *localServer*/hello/ [It renders an html template: index.html]  
 *localServer*/hello/cristian [an http response]  
 *localServer*/hello/cthulhu  [an http response]  
 *localServer*/hello/*name*  [It renders an html template (greet.html) that uses placeholders]  
-##### -newyear App
+#### -newyear App
+It returns Yes or No depending if the current day is New Year.
+*localServer*/newyear
 
 ## NOTES:\
-These notes were taken during the lecture: Django - Lecture 3 - CS50's Web Programming with Python and JavaScript 2020  
+These notes were taken during the lecture:    
+*Django - Lecture 3 - CS50's Web Programming with Python and JavaScript 2020*      
 Link (YouTube) : https://www.youtube.com/watch?v=w8q0C-C1js4&list=PLhQjrBD2T380xvFSUmToMMzERZ3qB5Ueu&index=5&ab_channel=CS50  
 The next notes are just references of what I considered useful information related to this project.   
 Good written documentation is a key part of Django:   
