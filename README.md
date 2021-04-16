@@ -29,6 +29,8 @@ Inside this app, I included the next options:
 #### -newyear App
 It returns Yes or No depending if the current day is New Year.
 *localServer*/newyear
+#### -tasks App     
+A Task Management App. It returns a list of taks and we can add or delete Items.
 
 ## NOTES:\
 These notes were taken during the lecture:    
@@ -66,7 +68,7 @@ template name: a reference to what are going to use.
 Render best practice: prefix the file with the directory name to avoid conflicts:   
 eg: render(request, "myDirectory/myFile.html")
 
-templates & static files:   
+Templates & Static Files:   
 Best practice: How to manage the folders to keep all the processes separated and manage modularity:   
 projectFolder/appName/templates/appName/index.html   
 projectFolder/appName/static/appName/style.css
@@ -87,7 +89,9 @@ Logic and possible content won't be displayed using devTools
 *eg: newyear application* 
 
 Static Files:   
-Files that aren't going to change (eg: CSS).
+Files that aren't going to change (eg: CSS or JS).
+Djando can generate dynamic html using python logic or inject static files.
+
 
 
 
