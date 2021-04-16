@@ -3,8 +3,8 @@ from . import views
 # . the current directory
 
 urlpatterns = [
-    path("",views.index, name="index"),
     # "" empty string, no additional args
+    path("",views.index, name="index"),
     path("cristian",views.cristian, name="cristian"),
     path("cthulhu",views.cthulhu, name="cthulhu"),
     #url pattern using placeholders
