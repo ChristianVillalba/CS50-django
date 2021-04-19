@@ -1,19 +1,19 @@
 # django-CS50
 #### CS50: DJANGO TUTORIAL
 
-(Create Virtual Environment if necessary)\
-Python version: 3.9.2 \
+(Create Virtual Environment if necessary)      
+Python version: 3.9.2    
 Django version: 3.1
 
 [in Terminal]\
-Check python version: python\
+Check python version: python   
 Check django verion: python -m django --version
 
 
 #### DJANGO PROJECT:\
-A Django Project ususally consisit in one or more Django Applications.\
-Each Application will offer a different service or functionality inside our bigger project.\
-I created this project to understand how Django works:\
+A Django Project ususally consisit in one or more Django Applications.   
+Each Application will offer a different service or functionality inside our bigger project.   
+I created this project to understand how Django works:   
 
 #### Project:
 #### -Lecture3
@@ -32,7 +32,7 @@ It returns Yes or No depending if the current day is New Year.
 #### -tasks App     
 A Task Management App. It returns a list of taks and we can add or delete Items.
 
-## NOTES:\
+## NOTES:
 These notes were taken during the lecture:    
 *Django - Lecture 3 - CS50's Web Programming with Python and JavaScript 2020*      
 Link (YouTube) : https://www.youtube.com/watch?v=w8q0C-C1js4&list=PLhQjrBD2T380xvFSUmToMMzERZ3qB5Ueu&index=5&ab_channel=CS50  
