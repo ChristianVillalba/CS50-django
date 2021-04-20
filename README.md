@@ -10,7 +10,7 @@ Check python version: python
 Check django verion: python -m django --version
 
 
-#### DJANGO PROJECT:\
+#### DJANGO PROJECT:
 A Django Project ususally consisit in one or more Django Applications.   
 Each Application will offer a different service or functionality inside our bigger project.   
 I created this project to understand how Django works:   
