@@ -30,9 +30,10 @@ Inside this app, I included the next options:
 It returns Yes or No depending if the current day is New Year.
 *localServer*/newyear
 #### -tasks App     
-A Task Management App. It returns a list of taks and we can delete Items.
-It uses a form to add new tasks.
-
+A Task Management App.   
+It returns a list of taks and we can delete Items.   
+It uses a form to add new tasks.    
+It uses sessions to personalise what is displayed to each different user   
 
 ## NOTES:
 These notes were taken during the lecture:    
