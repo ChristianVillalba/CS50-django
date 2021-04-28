@@ -5,9 +5,13 @@
 Python version: 3.9.2    
 Django version: 3.1
 
-[in Terminal]\
-Check python version: python   
+What Python version can I use with Django?:    
+https://docs.djangoproject.com/en/3.2/faq/install/
+
+[in Terminal]    
+Check python version: python 
 Check django verion: python -m django --version
+
 
 
 #### DJANGO PROJECT:
