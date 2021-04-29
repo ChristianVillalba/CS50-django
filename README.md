@@ -97,7 +97,9 @@ Logic and possible content won't be displayed using devTools
 
 Static Files:   
 Files that aren't going to change (eg: CSS or JS).
-Djando can generate dynamic html using python logic or inject static files.
+Django can generate dynamic html using python logic or inject static files.
+
+
 
 
 
