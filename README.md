@@ -57,7 +57,7 @@ python manage.py runserver
 
 [To be able to use any app: go to settings.py >scroll> INSTALLED_APPS > add nameApp to the list.]
 
-First App: Basic Response  
+Basic Response - hello app 
 -Produce a response (HttpResponse) when a url is visited.   
 -urls.py in project folder: master urls.py file connects with urls in apps   
 -urls.py in app folder: creating this file allows us to separate things out (modularity).   
@@ -99,8 +99,13 @@ Static Files:
 Files that aren't going to change (eg: CSS or JS).
 Django can generate dynamic html using python logic or inject static files.
 
-
-
+Generating Dynamic Content : task app    
+It shows us a list of taks, we can add more and it shows the new additions.    
+Using a context dictionary in our views.py (Usually in the context dictionary, the keys and values have the same name),    
+Django have access to the variable name "tasks" that contains the value tasks. {"tasks":tasks}
+We can create an index.html file that uses the variable "tasks"     
+And adding a for loop to our template...
+...the displayed content (our list) will be dynamic.
 
 
 
