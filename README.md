@@ -102,7 +102,7 @@ Django can generate dynamic html using python logic or inject static files.
 Generating Dynamic Content : task app    
 It shows us a list of taks, we can add more and it shows the new additions.    
 Using a context dictionary in our views.py (Usually in the context dictionary, the keys and values have the same name),    
-Django have access to the variable name "tasks" that contains the value tasks. {"tasks":tasks}
+Django have access to the variable name "tasks" that contains the value tasks. {"tasks":tasks}    
 We can create an index.html file that uses the variable "tasks"     
 And adding a for loop to our template...
 ...the displayed content (our list) will be dynamic.
