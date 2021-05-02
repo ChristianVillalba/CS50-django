@@ -9,7 +9,7 @@ What Python version can I use with Django?:
 https://docs.djangoproject.com/en/3.2/faq/install/
 
 [in Terminal]    
-Check python version: python 
+Check python version: python    
 Check django verion: python -m django --version
 
 
@@ -29,7 +29,7 @@ Inside this app, I included the next options:
 *localServer*/hello/ [It renders an html template: index.html]  
 *localServer*/hello/cristian [an http response]  
 *localServer*/hello/cthulhu  [an http response]  
-*localServer*/hello/*name*  [It renders an html template (greet.html) that uses placeholders]  
+*localServer*/hello/*AnyName*  [It renders an html template (greet.html) that uses placeholders]  
 #### -newyear App
 It returns Yes or No depending if the current day is New Year.
 *localServer*/newyear
