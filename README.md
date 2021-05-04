@@ -57,7 +57,8 @@ python manage.py runserver
 
 [To be able to use any app: go to settings.py >scroll> INSTALLED_APPS > add nameApp to the list.]
 
-Basic Response - hello app 
+
+#### Basic Response - hello app 
 -Produce a response (HttpResponse) when a url is visited.   
 -urls.py in project folder: master urls.py file connects with urls in apps   
 -urls.py in app folder: creating this file allows us to separate things out (modularity).   
@@ -65,7 +66,8 @@ Basic Response - hello app
 -We can create url patterns using placeholders [<str:name>] and take extra arguments.   
 -We can use python logic in those placehoders to modify the content displayed.
 
-Http Response & Render:    
+
+#### Http Response & Render:    
 -HttpResponse : can display html content.   
 -Render : can render an entire html file.   
 Using render our content is clearer and makes easier collaborations.    
@@ -75,12 +77,14 @@ template name: a reference to what are going to use.
 Render best practice: prefix the file with the directory name to avoid conflicts:   
 eg: render(request, "myDirectory/myFile.html")
 
-Templates & Static Files:   
+
+#### Templates & Static Files:   
 Best practice: How to manage the folders to keep all the processes separated and manage modularity:   
 projectFolder/appName/templates/appName/index.html   
 projectFolder/appName/static/appName/style.css
 
-Templates:   
+
+#### Templates:   
 -Templates are parameterizables   
 Django takes html files and treats them like templates that we can render   
 adding its own template language on top of the existing html.   
@@ -95,11 +99,13 @@ then, it returns to the user only the final result at the end of the rendering p
 Logic and possible content won't be displayed using devTools   
 *eg: newyear application* 
 
-Static Files:   
+
+#### Static Files:   
 Files that aren't going to change (eg: CSS or JS).
 Django can generate dynamic html using python logic or inject static files.
 
-Generating Dynamic Content : task app    
+
+#### Generating Dynamic Content : task app    
 It shows us a list of taks, we can add more and it shows the new additions.    
 Using a context dictionary in our views.py (Usually in the context dictionary, the keys and values have the same name),    
 Django have access to the variable name "tasks" that contains the value tasks. {"tasks":tasks}    
