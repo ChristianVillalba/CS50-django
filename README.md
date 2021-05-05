@@ -37,7 +37,8 @@ It returns Yes or No depending if the current day is New Year.
 A Task Management App.   
 It returns a list of taks and we can delete Items.   
 It uses a form to add new tasks.    
-It uses sessions to personalise what is displayed to each different user   
+It uses Template Inheritance to create continuity through the pages.    
+It uses sessions to personalise what is displayed to each different user.       
 
 ## NOTES:
 These notes were taken during the lecture:    
@@ -112,6 +113,30 @@ Django have access to the variable name "tasks" that contains the value tasks. {
 We can create an index.html file that uses the variable "tasks"     
 And adding a for loop to our template...
 ...the displayed content (our list) will be dynamic.
+
+#### Template Inheritance:
+
+We can define an html layout that the others html files (index & addtask) are going to inherit from it.    
+This allows us to have the same structure in all the files. (Consistency between our pages).     
+*eg: layout.html in our tasks application*     
+*index.html & addtasks.html inherit the content from layout.html using* {% extends "tasks/layout.html" %}       
+Be able to factor out the html that is common to all the pages can be very helpful just for good design and not repeat ourselves and makes it easier to change the common structure.     
+
+#### Using urls with Django
+
+Change the pages in our website is a bit hard,     
+Django is designed to make easy change the structure of the pages in terms of how the urls are related to each other.     
+This is based on the content of the urls.py file      
+We don’t need to hard code all the links. Django have a feature to figure it out urls.     
+*eg: <a href-"{% url 'addtask' %}">Add a New Task</a>* (misspeled = to - in order to avoid an anchor tag)    
+
+
+
+
+
+
+
+
 
 
 
