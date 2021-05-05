@@ -130,12 +130,40 @@ This is based on the content of the urls.py file
 We don’t need to hard code all the links. Django have a feature to figure it out urls.     
 *eg: <a href-"{% url 'addtask' %}">Add a New Task</a>* (misspeled = to - in order to avoid an anchor tag)    
 
+To avoid name collisions ,  eg: two urls called index     
+We add in the app’s urls.py file, above urlspatterns:    
+app_name = "appName"      
+*eg: app_name = "tasks"*    
+And in the html file:    
+{% url ‘appName:addtask’ %}     
+*eg: <a href-"{% url 'tasks:addtask' %}">Add a New Task</a>*      
+
+#### Forms:  actions.     
+The document will react to our interactions,     
+in this case, when we submit a New Task, the document will take us back to the form     
+
+#### Forms:  methods     
+When we are requesting content, the implicit method associated is GET     
+When we are submitting data that can could change the information stored in the application, We are using the POST method.     
+ 
+#### CSRF token     
+{% csrf_token %}     
+It is a requirement when we have a form with the post method     
+CSRF: Cross Site Request Forgery    
+The csrf token changes on each session, so when the users submit that form, the csrf token is submitted too         
+Only if the token is valid, the submission is allowed       
+This allows to design forms that are not vulnerable to the forgery vulnerability        
+(other user submitting their data to other user’s application )
 
 
-
-
-
-
+#### Creating forms with Django    
+[in views.py]    
+We import the forms library    
+We create a Python Class  that represents the form       
+When we render the html file, we add a Context Dictionary {"key":value} that gives to the template access to the python class we created with all its values (these are the fields in our form)      
+[in an html file]     
+{{ key }} Django will generate and inject the content in the html file to make the form work.      
+ Now, if we want to update the form, we can just update the Python Class and its fileds.     
 
 
 
