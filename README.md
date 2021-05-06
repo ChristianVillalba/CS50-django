@@ -13,7 +13,6 @@ Check python version: python
 Check django verion: python -m django --version
 
 
-
 #### DJANGO PROJECT:
 A Django Project ususally consisit in one or more Django Applications.   
 Each Application will offer a different service or functionality inside our bigger project.   
@@ -58,7 +57,6 @@ python manage.py runserver
 
 [To be able to use any app: go to settings.py >scroll> INSTALLED_APPS > add nameApp to the list.]
 
-
 #### Basic Response - hello app 
 -Produce a response (HttpResponse) when a url is visited.   
 -urls.py in project folder: master urls.py file connects with urls in apps   
@@ -66,7 +64,6 @@ python manage.py runserver
 -Each url will display a different HttpResponse.   
 -We can create url patterns using placeholders [<str:name>] and take extra arguments.   
 -We can use python logic in those placehoders to modify the content displayed.
-
 
 #### Http Response & Render:    
 -HttpResponse : can display html content.   
@@ -78,7 +75,6 @@ template name: a reference to what are going to use.
 Render best practice: prefix the file with the directory name to avoid conflicts:   
 eg: render(request, "myDirectory/myFile.html")
 
-
 #### Templates & Static Files:   
 Best practice: How to manage the folders to keep all the processes separated and manage modularity:   
 projectFolder/appName/templates/appName/index.html   
@@ -89,22 +85,22 @@ projectFolder/appName/static/appName/style.css
 -Templates are parameterizables   
 Django takes html files and treats them like templates that we can render   
 adding its own template language on top of the existing html.   
+
 -{{ }} Django template language, injects content.   
+*eg: hello application*    
 The content will be a variable created using a python dictionary {key:VALUE}    
-In the html: {{key}} will display the VALUE   
-*eg: hello application*   
+In the html: {{key}} will display the VALUE asigned in our python file.   
+   
 -{% %} Django template language, adds logic.   
+*eg: newyear application*     
 The content displayed will depend on the logic (eg: conditions).   
 Django takes the html template and manipulate it based on the input we get.   
 then, it returns to the user only the final result at the end of the rendering process.   
 Logic and possible content won't be displayed using devTools   
-*eg: newyear application* 
-
 
 #### Static Files:   
 Files that aren't going to change (eg: CSS or JS).
 Django can generate dynamic html using python logic or inject static files.
-
 
 #### Generating Dynamic Content : task app    
 It shows us a list of taks, we can add more and it shows the new additions.    
@@ -154,7 +150,6 @@ The csrf token changes on each session, so when the users submit that form, the 
 Only if the token is valid, the submission is allowed       
 This allows to design forms that are not vulnerable to the forgery vulnerability        
 (other user submitting their data to other user’s application )
-
 
 #### Creating forms with Django    
 [in views.py]    
