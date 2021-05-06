@@ -124,7 +124,7 @@ Change the pages in our website is a bit hard,
 Django is designed to make easy change the structure of the pages in terms of how the urls are related to each other.     
 This is based on the content of the urls.py file      
 We don’t need to hard code all the links. Django have a feature to figure it out urls.     
-*eg: <a href-"{% url 'addtask' %}">Add a New Task</a>* (misspeled = to - in order to avoid an anchor tag)    
+*eg: <a href-"{% url 'addtask' %}">Add a New Task</>* (misspeled = to - in order to avoid an anchor tag)    
 
 To avoid name collisions ,  eg: two urls called index     
 We add in the app’s urls.py file, above urlspatterns:    
@@ -132,7 +132,7 @@ app_name = "appName"
 *eg: app_name = "tasks"*    
 And in the html file:    
 {% url ‘appName:addtask’ %}     
-*eg: <a href-"{% url 'tasks:addtask' %}">Add a New Task</a>*      
+*eg: <a href-"{% url 'tasks:addtask' %}">Add a New Task</>*      
 
 #### Forms:  actions.     
 The document will react to our interactions,     
