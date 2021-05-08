@@ -161,6 +161,4 @@ When we render the html file, we add a Context Dictionary {"key":value} that giv
  Now, if we want to update the form, we can just update the Python Class and its fileds.     
 
 
-07/05/21 : New computer, cloning 01 test
-08/05/21 : New computer, cloning 02 test
 
