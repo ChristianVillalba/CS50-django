@@ -10,7 +10,7 @@ https://docs.djangoproject.com/en/3.2/faq/install/
 
 [in Terminal]    
 Check python version: python    
-Check django verion: python -m django --version
+Check django version: python -m django --version
 
 
 #### DJANGO PROJECT:
