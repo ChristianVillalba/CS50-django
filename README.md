@@ -36,6 +36,7 @@ It returns Yes or No depending if the current day is New Year.
 A Task Management App.   
 It returns a list of taks and we can delete Items.   
 It uses a form to add new tasks.    
+The app includes Client Side Validation & Server Side Validation. 
 It uses Template Inheritance to create continuity through the pages.    
 It uses sessions to personalise what is displayed to each different user.       
 
@@ -165,6 +166,14 @@ We need to include client side validation but also Server Side Validation to be 
 *eg: addTask [function in taks/views.py]*
 
 
+#### Redirect Users
+After submitting a task, the logical behavior would be to go back to the index.html and be able to see all the tasks:     
+Django makes this process easy,   
+Instead of hard code the path, Django will figure it out what is the path to index in the task app
+*eg: addTask [function in taks/views.py]*
 
-
+#### Sessions
+We are storing variables in a Local Variable      
+Any person visiting the website will see the same exact list of tasks     
+We would like different users to see their personal list of tasks    
 
