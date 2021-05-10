@@ -160,5 +160,11 @@ When we render the html file, we add a Context Dictionary {"key":value} that giv
 {{ key }} Django will generate and inject the content in the html file to make the form work.      
  Now, if we want to update the form, we can just update the Python Class and its fileds.     
 
+#### Form Validation
+We need to include client side validation but also Server Side Validation to be sure that our data is going to be accurate and clean.     
+*eg: addTask [function in taks/views.py]*
+
+
+
 
 
