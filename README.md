@@ -3,10 +3,10 @@
 I created these projects following the tutorial     
 CS50's Web Programming with Python and JavaScript 2020     
 https://www.youtube.com/playlist?list=PLhQjrBD2T380xvFSUmToMMzERZ3qB5Ueu    
-to understand how Django works.
+to understand how Django works.    
 Each individual project contains my personal notes taken during the lectures.   
 
-####SET UP
+#### SET UP
 (Create Virtual Environment if necessary)      
 Python version: 3.9.2    
 Django version: 3.1

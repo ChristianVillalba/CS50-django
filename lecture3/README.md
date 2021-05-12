@@ -1,6 +1,6 @@
 ## NOTES: Lecture3
 These notes were taken during the lecture:    
-*Django - Lecture 3 - CS50's Web Programming with Python and JavaScript 2020*      
+*Lecture 3 - CS50's Web Programming with Python and JavaScript 2020*      
 Link (YouTube) : https://www.youtube.com/watch?v=w8q0C-C1js4&list=PLhQjrBD2T380xvFSUmToMMzERZ3qB5Ueu&index=5&ab_channel=CS50  
 The next notes are just references of what I considered useful information related to this project.   
 Good written documentation is a key part of Django:   
@@ -131,7 +131,7 @@ Instead of hard code the path, Django will figure it out what is the path to ind
 *eg: addTask [function in tasks/views.py]*
 
 #### Sessions
-We are storing variables in a Local Variable      
+*task app*           
 Any person visiting the website will see the same exact list of tasks     
 We would like different users to see their personal list of tasks    
 
