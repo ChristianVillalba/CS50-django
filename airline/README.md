@@ -29,7 +29,7 @@ BLOB Binary Large Object (images, sounds, videos)
 Sometimes we will need to store information in different tables related between them    
 eg: flights, airports , passengers...    
 This creates different types of relationships:    
-One to one (one individual passanger, one flight at the time) ,    
+Many to many (multiple passengers can have multiple flights) ,    
 many to one (many passengers in a flight) ,    
 one to many (one city, many flights) ...   
 
@@ -53,8 +53,11 @@ we will have to make migrations, This is a 2 steps process:
 Django receive the instructions about how to manipulate the database    
 2) Applying those changes to the database    
 
-
-
+### DJANGO ADMIN:
+A built-in app designed for the manipulation of the models    
+we need to create an administrator account in our Django application    
+to be able to manipulate our Flight(s) and Airport(s) from the admin app    
+eg: All the Flights added trough the app will be displayed on the flights app   
 
 
 <!--
