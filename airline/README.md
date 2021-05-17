@@ -53,7 +53,7 @@ we will have to make migrations, This is a 2 steps process:
 Django receive the instructions about how to manipulate the database    
 2) Applying those changes to the database    
 
-### DJANGO ADMIN:
+### Django Admin:
 A built-in app designed for the manipulation of the models    
 We need to create an administrator account in our Django application    
 to be able to manipulate our Flight(s) and Airport(s) from the Admin App    
