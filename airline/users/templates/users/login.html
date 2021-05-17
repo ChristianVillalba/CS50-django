@@ -1,11 +1,17 @@
-{%  extends "flights/layout.html" %}
+{%  extends "users/layout.html" %}
 {%  block body %}
-<h1>Log In</h1>
+
+{%  if message %}
+  <div class="">
+    {{ message }}
+  </div>
+{%  endif %}
+
 <form class="" action="{% url 'login' %}" method="post">
   {% csrf_token %}
   <input type="text" name="username" value="" placeholder="Username">
   <input type="password" name="password" value="" placeholder="Password">
   <input type="submit" name="" value="Login">
-
 </form>
+
 {%  endblock %}

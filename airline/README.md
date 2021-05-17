@@ -63,6 +63,8 @@ We can specify any particular settings that we want to apply to how the admin pa
 ### Users
 Authentication: the ability to users to log in & out
 Django has authentication features
+in the admin page. The users can have additional information associated with them.
+We can add fields that we want to keep track of
 <!--
 ## Secret Bonus: SQLite Commands:
 [in Terminal sqlite3]
