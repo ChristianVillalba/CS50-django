@@ -61,7 +61,8 @@ eg: All the Flights added trough the app will be displayed on the flights app
 We can specify any particular settings that we want to apply to how the admin page is displayed or even add some functionality.
 
 ### Users
-
+Authentication: the ability to users to log in & out
+Django has authentication features
 <!--
 ## Secret Bonus: SQLite Commands:
 [in Terminal sqlite3]
