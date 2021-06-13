@@ -62,4 +62,4 @@ Migration is a process necessary to update and include the created models throug
 Django Admin: A built-in app designed for the manipulation of the models.       
 #### -users     
 App that allows us to represent Users
-It uses authentication features
+It uses Django's authentication features
