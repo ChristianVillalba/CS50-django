@@ -23,6 +23,10 @@ Check django version: python -m django --version
 
 Link (Django Documentation): https://www.djangoproject.com/
 
+CHANGE THE SECRET KEY in settings.py:      
+https://miniwebtool.com/django-secret-key-generator/
+
+
 #### DJANGO PROJECTS:
 A Django Project usually consists in one or more Django Applications.   
 Each Application will offer a different service or functionality inside our bigger project.    
